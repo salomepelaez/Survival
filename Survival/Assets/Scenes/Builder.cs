@@ -51,8 +51,8 @@ public class Builder : MonoBehaviour
 
     public void Zombie()
     {
-        
         int zombies = Random.Range(2, 6);
+        
         for (int i = 0; i < zombies; i++)
         {
             GameObject zombie = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -60,7 +60,9 @@ public class Builder : MonoBehaviour
             posicion.x = Random.Range(-30, 30);
             posicion.z = Random.Range(-30, 30);
             zombie.transform.position = posicion;
-            Debug.Log("zombie");
+
+            int age = Random.Range(15, 100);
+            Debug.Log("zombie " + age);
 
             int color = Random.Range(0, 3);
 
@@ -95,10 +97,10 @@ public class Builder : MonoBehaviour
             posicion.x = Random.Range(-30, 30);
             posicion.z = Random.Range(-30, 30);
             villager.transform.position = posicion;
-            Debug.Log("aldeano");
-
-
         }
 
+        Debug.Log("aldeano");
+
+        
     }
 }
