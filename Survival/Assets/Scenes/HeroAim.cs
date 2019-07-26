@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeroAim : Builder
+public class HeroAim : MonoBehaviour
 {
     float mouseX;
     float mouseY;
