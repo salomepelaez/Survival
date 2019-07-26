@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeroMove : Builder
+public class HeroMove : MonoBehaviour
 {
     public GameObject camara;
     private float speed = 0.1f;
