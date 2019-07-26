@@ -58,8 +58,7 @@ public class Villager
             };
 
             int age = Random.Range(15, 100);
-            Debug.Log("Edad " + age);
-            Debug.Log(names[n]);
+            Debug.Log("¡Hola, citadino! Me llamo " + (names[n])+ ". Y tengo  " + age + " años.");
 
         }
     }
