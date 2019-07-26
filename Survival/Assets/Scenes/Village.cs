@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Village : MonoBehaviour
-{ 
-
+{
     public void Start()
-    {
-        int n = Random.Range(3, 6);
+    { 
+        int n = Random.Range(3, 6);        
         Villager myVillager = new Villager(n);
+
     }
 
     
@@ -18,6 +18,7 @@ public class Villager
 {
     public GameObject[] ald;
     int villagers = Random.Range(3, 6);
+    
 
     public Villager(int villagers)
     {
@@ -61,5 +62,10 @@ public class Villager
             Debug.Log("¡Hola, citadino! Me llamo " + (names[n])+ ". Y tengo  " + age + " años.");
 
         }
+    }
+
+    public void Check()
+    {
+
     }
 }
