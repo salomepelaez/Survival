@@ -8,13 +8,15 @@ public class Zombies : MonoBehaviour
     {
         int n = Random.Range(2, 6);
         Zombie z = new Zombie(n);
+        
     }
-
+    
 }
 
 public class Zombie
 {
     public int myZombie = Random.Range(2, 6);
+    
     public Zombie(int myZombie)
     {
         this.myZombie = myZombie;
