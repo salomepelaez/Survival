@@ -40,9 +40,24 @@ public class Zombie
                     zombie.GetComponent<Renderer>().material.color = Color.magenta;
                     break;
             }
+
+            if(zombie.GetComponent<Renderer>().material.color == Color.cyan)
+            {
+                Debug.Log("Cerebrossssss color Cyan. Grrr");
+            }
+
+            if (zombie.GetComponent<Renderer>().material.color == Color.green)
+            {
+                Debug.Log("Zombie verrrde");
+            }
+
+            if (zombie.GetComponent<Renderer>().material.color == Color.magenta)
+            {
+                Debug.Log("Zombie magenta. Cerebrosss");
+            }
         }
 
-        Debug.Log("zombie");
+        
     }
 }
 
