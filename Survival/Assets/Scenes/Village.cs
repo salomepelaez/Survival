@@ -8,7 +8,33 @@ public class Village : MonoBehaviour
     { 
         int n = Random.Range(3, 6);        
         Villager myVillager = new Villager(n);
+        int name = Random.Range(0, 20);
+        string[] names = new string[20]
+          {
+                "Rose",
+                "Ophelie",
+                "Celeste",
+                "Mérida",
+                "Catrina",
+                "Dean",
+                "Will",
+                "Lucas",
+                "Dustin",
+                "Mike",
+                "Sophie",
+                "Isabella",
+                "Amelie",
+                "Charlotte",
+                "Milo",
+                "Dante",
+                "Ariel",
+                "Suhail",
+                "Jake",
+                "David",
+        };
 
+        int age = Random.Range(15, 100);
+        Debug.Log("¡Hola, citadino! Me llamo " + (names[n]) + ". Y tengo  " + age + " años.");
     }
 
     
@@ -32,34 +58,7 @@ public class Villager
             posicion.x = Random.Range(-30, 30);
             posicion.z = Random.Range(-30, 30);
             villager.transform.position = posicion;
-
-            int n = Random.Range(0, 20);
-            string[] names = new string[20]
-              {
-                "Rose",
-                "Ophelie",
-                "Celeste",
-                "Mérida",
-                "Catrina",
-                "Dean",
-                "Will",
-                "Lucas",
-                "Dustin",
-                "Mike",
-                "Sophie",
-                "Isabella",
-                "Amelie",
-                "Charlotte",
-                "Milo",
-                "Dante",
-                "Ariel",
-                "Uribe paraco",
-                "Jake",
-                "David",
-            };
-
-            int age = Random.Range(15, 100);
-            Debug.Log("¡Hola, citadino! Me llamo " + (names[n])+ ". Y tengo  " + age + " años.");
+                     
 
         }
     }
