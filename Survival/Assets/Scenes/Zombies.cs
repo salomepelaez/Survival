@@ -54,17 +54,17 @@ public class Zombie
 
         if(zZombie.GetComponent<Renderer>().material.color == Color.cyan)
         {
-            Debug.Log("Cerebrossssss color Cyan. Grrr");
+            Debug.Log("Soy un zombie color cyan" );
         }
 
         if (zZombie.GetComponent<Renderer>().material.color == Color.green)
         {
-            Debug.Log("Zombie verrrde");
+            Debug.Log("Soy un zombie color verde");
         }
 
         if (zZombie.GetComponent<Renderer>().material.color == Color.magenta)
         {
-            Debug.Log("Zombie magenta. Cerebrosss");
+            Debug.Log("Soy un zombie color magenta");
         }
 
             
