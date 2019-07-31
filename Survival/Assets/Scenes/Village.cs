@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Village : MonoBehaviour
 {
+    public GameObject held;
 
     public void Start()
-    {
-        
+    {        
+        GameObject s = Instantiate(held, Vector3.zero, Quaternion.identity);
+
         int n = Random.Range(4, 10);
         int nZombies = Random.Range(1, (n - 1));       
         int v = n - nZombies;
