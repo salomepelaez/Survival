@@ -74,7 +74,7 @@ public class Villager
 
     string Message()
     {
-        return "¡Hola, citadino! Me llamo " + (names) + ". Y tengo  " + Random.Range(15, 101) + " años.";
+        return "Hola soy " + (names) + ". Y tengo  " + Random.Range(15, 101) + " años.";
     }
-    //Hasta acá funciona pero le imprime el mismo nombre y edad a todos xd
+    
 }
