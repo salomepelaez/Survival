@@ -39,15 +39,13 @@ public class Village : MonoBehaviour
  
         for (int j = 0; j < v; j++)
         {
+            
             new Villager(Random.Range(15, 101), names[Random.Range(0, names.Length)]);
-           
-            Message();
+            
+
         }
                 
-        void Message()
-        {
-            Debug.Log("¡Hola, citadino! Me llamo " + (names[v]) + ". Y tengo  " + Random.Range(15, 101) + " años.");
-        }
+        
 
        
     }
@@ -57,22 +55,26 @@ public class Village : MonoBehaviour
 
 public class Villager
 {
-    private string[] names;
-    public GameObject[] ald;
+    string names;
+    
     int villagers = Random.Range(4, 10);
 
     public Villager(int villagers, string names)
     {
         this.villagers = villagers;
-        ald = new GameObject[10];
-             
-            GameObject villager = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            Vector3 posicion = new Vector3();
-            posicion.x = Random.Range(-30, 30);
-            posicion.z = Random.Range(-30, 30);
-            villager.transform.position = posicion;          
-                    
+        this.names = names;
+                     
+        GameObject villager = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        Vector3 posicion = new Vector3();
+        posicion.x = Random.Range(-30, 30);
+        posicion.z = Random.Range(-30, 30);
+        villager.transform.position = posicion;
+        Debug.Log(Message());
     }
-    
-   //Hasta acá funciona pero le imprime el mismo nombre y edad a todos xd
+
+    string Message()
+    {
+        return "¡Hola, citadino! Me llamo " + (names) + ". Y tengo  " + Random.Range(15, 101) + " años.";
+    }
+    //Hasta acá funciona pero le imprime el mismo nombre y edad a todos xd
 }
