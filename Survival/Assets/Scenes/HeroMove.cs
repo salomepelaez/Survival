@@ -37,3 +37,4 @@ public class HeroMove : MonoBehaviour
         transform.rotation = Quaternion.Euler(0.0f, rotat, 0.0f); // Puesto que la rotación fue asignada en Y, es necesario asignarle el float a los parámetros.
 
     }
+}
